@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org"
+      th:fragment="Layout(content)">
+<head>
+<meta charset="UTF-8">
+<title>Main</title>
+</head>
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+<body>
+<!--Start Navbar-->
+ <!-- Top Banner -->
+  <div class="top-banner text-center py-2">
+    WE CAN ADD NOTIFICATIONS HERE
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+    <div class="container-fluid">
+      
+      <!-- Logo and Brand Name -->
+      <a class="navbar-brand d-flex align-items-center" href="../html/index.html">
+        <img src="img/SHCLOGO2.png" width="40" height="40" class="me-2">
+        <span class="fw-bold fs-5">Swati Herbal Cosmetics</span>
+      </a>
+
+      <!-- Toggle button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar content -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav flex-wrap justify-content-center">
+          <!-- link  content face.html-->
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="../html/face.html">FACE</a>
+          </li>
+          <!-- link  content body.html-->
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="../html/body.html">BODY</a>
+          </li>
+          <!-- link  content hair.html-->
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="../html/hair.html">HAIR</a>
+          </li>
+          <!-- link  content wellness.html-->
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="../html/wellness.html">WELLNESS</a>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#">GIFTS</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#">WHAT'S NEW</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#">BEST SELLERS</a></li>
+          <li class="nav-item"><a class="nav-link text-muted" href="#">Skincare Guide</a></li>
+          <li class="nav-item"><a class="nav-link text-muted" href="#">Rewards</a></li>
+         <li class="nav-item">
+            <a class="nav-link text-muted" href="../html/about.html">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right-Side Icons -->
+<div class="d-flex align-items-center icon-group">
+  <a href="#" class="nav-link px-2"><i class="bi bi-person"></i></a>
+  <a href="#" class="nav-link px-2"><i class="bi bi-search"></i></a>
+  <a href="#" class="nav-link px-2"><i class="bi bi-bag"></i></a>
+</div>
+    </div>
+  </nav> 
+<!--End Navbar-->
+     <div th:replace="${content}"> </div> 
+</body>
+</html>

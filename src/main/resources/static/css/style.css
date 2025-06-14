@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.top-banner {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.navbar-nav .nav-link {
+  padding: 0rem 1rem;
+  font-size: 0.67rem;
+  
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d2691e;
+  text-decoration: underline;
+}
+.icon-group .nav-link i {
+  font-size: 1.0rem;
+  color: #000;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+.icon-group .nav-link:hover i {
+  color: #d2691e; /* Change this to match your theme */
+  transform: scale(1.1);
+}
+
+.icons a:hover {
+  color: #d2691e;
+}
+
+.navbar-brand img {
+  object-fit: contain;
+}
+.main {
+    background: url(../img/back.png) no-repeat;
+    background-size: cover;
+    min-height:fit-content ;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+   
+}
+.main {
+  background-color: #4CAF50; /* Optional: Add background color or image */
+  padding: 60px 0;
+}
+.main h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+
+.btn1 {
+  background-color: #f12b2b;
+  color: #f6efef;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #36eb3f;
+  color: #fff;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer i:hover {
+  color: yellow;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+.footer h5,
+.footer h6 {
+  color: yellow;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer h5:hover,
+.footer h6:hover {
+  color: yellow;
+  text-shadow: 0 0 10px yellow;
+}
+/* === Section: Our Story === */
+.our-story {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.our-story h2 {
+  color: yellow;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.our-story p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* === Section: Full-width Background Image === */
+
+.bg-image-section {
+  position: relative;
+  background-image: url('img/about_us_img.png'); /* Use your image path */
+  background-size: cover;         /* Makes the image cover the entire area */
+  background-position: center;    /* Centers the image */
+  background-repeat: no-repeat;   /* Avoids repeating the image */
+  height: 100vh;                  /* Full viewport height */
+  width: 100%;                   /* Full width */
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0; */
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent dark overlay */
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+/* Optional: Make sure text adjusts on smaller screens */
+@media (max-width: 576px) {
+  .content h1 {
+    font-size: 1.5rem;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+/* === Section: Our Promises === */
+section.text-center h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* === Section: Customer Testimonial === */
+section .img-fluid {
+  border-radius: 10px;
+}
+
+section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 1.05rem;
+}
+
+/* === Section: Our Values === */
+.our-values {
+  background-color: #fff9e6;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.our-values h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.our-values h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 15px;
+}
+
+.our-values p {
+  font-size: 0.95rem;
+  padding: 0 10px;
+  color: #333;
+}
+
+.our-values i {
+  font-size: 2rem;
+  color: #f1c40f; /* Golden yellow */
+  margin-bottom: 10px;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+  .our-story h2,
+  .our-values h2 {
+    font-size: 2rem;
+  }
+
+  .our-values p {
+    padding: 0;
+  }
+}
+
+/* === dropdowns === */
+

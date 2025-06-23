@@ -343,3 +343,82 @@ section p {
   background-color: #f8f9fa;
   color: #000;
 }
+
+
+/* HYPER LINK BUTTION IN SKINCARE GUIDE PAGE */
+
+.custom-link {
+  background-color: transparent;
+  color: black;
+  border: 2px solid transparent; /* invisible border initially */
+  text-decoration: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.custom-link:hover {
+  border-color: #e0e0e0; /* light gray border on hover */
+  color: gray;
+  text-decoration: none;
+}
+
+
+
+
+/*------------------------------------------------------------*/
+
+/* === Section: Our Story === */
+.skincare {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.skincare h2 {
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.skincare p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+
+
+/*--------------------------------------------------------------------------------*/
+
+.routine-section {
+  background-color: #EAE6DA; /* soft beige */
+  position: relative;
+}
+
+.routine-section .btn {
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.routine-section .btn:hover {
+  background-color: #d9d4c8;
+  color: #000;
+}
+
+.accessibility-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 32px;
+}
+
+.chat-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 32px;
+}
+
+
+/*------------------------------------------------------------------------------------*/

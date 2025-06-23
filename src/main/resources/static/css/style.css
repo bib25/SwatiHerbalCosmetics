@@ -13,7 +13,7 @@
 
 .navbar-nav .nav-link {
   padding: 0rem 1rem;
-  font-size: 0.67rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 
@@ -262,4 +262,84 @@ section p {
     position: static;
     margin-left: 1rem;
   }
+}
+
+
+/* -------------------------Moving to text -------------------------*/
+.top-banner {
+  height: 30px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrolling-text {
+  display: inline-block;
+  animation: side-dance 1.5s ease-in-out infinite;
+  font-weight: bold;
+}
+
+@keyframes side-dance {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*--------------------------------------------------------*/
+
+
+/* Wider container and remove border radius */
+.form-container {
+  max-width: 500px;
+}
+
+/* Make inputs and form group taller and bolder */
+.input-group .form-control {
+  height: 50px;
+  font-size: 1rem;
+  padding: 0 15px;
+}
+
+.input-group-text {
+  background-color: #f0f0f0;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  font-size: 1.1rem;
+}
+
+/* Title styling */
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #111;
+}
+
+/* Button spacing */
+#signupBtn,
+#signinBtn {
+  height: 45px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+#signinBtn:hover {
+  background-color: #f8f9fa;
+  color: #000;
 }
